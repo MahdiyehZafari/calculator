@@ -43,10 +43,10 @@ function calculate() {
     }
 
     // به‌روزرسانی ورودی با نتیجه
-    inputField.value = result;
+    inputField.value = result.toLocaleString();
     currentInput = '';
     operator = '';
-    firstOperand = result; // برای ادامه محاسبات
+    firstOperand = result.toLocaleString(); // برای ادامه محاسبات
 }
 
 // تابع برای تنظیم عملگر

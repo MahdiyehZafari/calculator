@@ -1,7 +1,9 @@
 :root
 {
-    --background:#f9a8d4;
-    --body-background:#1e293b;
+    --background:#E4C087;
+    --btns:#54473F;
+    --clear:#fc6501;
+    /* --body-background:#1e293b; */
 }
 body
 {
@@ -52,14 +54,13 @@ body
     border: 0;
     font-size: 2rem;
     border-radius: 50px;
-    background: var(--background);
-    box-shadow: -5px -5px 9px rgba(121, 94, 119, 0.3), 5px 5px 9px rgba(73, 5, 51, 0.45);
+    background: var(--btns);
+    box-shadow: -5px -5px 9px #2c1f14, 5px 5px 9px rgba(73, 5, 51, 0.45);
     color: rgb(255, 255, 255);
   }
   
-  .buttons button:focus {
-    background: var(--background);
-    box-shadow: inset -5px -5px 9px rgba(73, 5, 51, 0.45), inset 5px 5px 9px rgba(73, 5, 51, 0.45);
+  .buttons button:not(#clear):focus {
+    color: var(--clear);
   }
   
   .buttons {
@@ -69,5 +70,9 @@ body
   }
   .operator
   {
-    color: #490533 !important;
+    color: var(--clear) !important;
+  }
+  #clear
+  {
+    background-color: var(--clear);
   }
